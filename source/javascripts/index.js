@@ -11,5 +11,4 @@
 
 //= require ./site/save-data
 //= require ./site/subtle-slide
-//= require ./site/validated-forms
 //= require ./site/validations
