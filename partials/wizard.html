@@ -34,11 +34,12 @@
         <li></li>
         <li></li>
         <li></li>
+        <li></li>
       </ul>
 
       <fieldset id="activation-number">
         <h3>
-          Enter the sixteen digit account number on your BBMC Mortgage Card:
+          Enter the sixteen digit account number on your CopperLine Card:
           <div class="tooltip-item">
             ?
             <div class="tooltip tooltip-image">
@@ -55,75 +56,26 @@
           <input type="button" name="next" class="next action-button add-break" value="Next" />
       </fieldset>
       <fieldset id="confirm-company">
-        <h3>Is this Terri Murray from San Clemente, California?</h3>
+        <h3>You’re from <span>ABC Technology Company, LLC</span>, is that correct?</h3>
         <input type="button" name="next" class="next action-button" value="Yes" />
         <input type="button" name="next" class="next action-button inactive-button" value="No" />
       </fieldset>
 
       <fieldset id="confirm-president">
-        <h3>Hi Terri, you still own your home at 800 Carnaros Street, right?</h3>
-        <input type="button" name="next" class="next action-button" value="Yes" />
-        <input type="button" name="next" class="next action-button inactive-button" value="No" />
-      </fieldset>
-
-      <fieldset id="visa-card">
-        <div class="text-block">
-          <h3>Well Terri, Zillow estimates your home value at $920,000, that’s pretty good.</h3>
-          <h3>Do you think that’s about right?</h3>
-        </div>
-        <div class="image-block">
-          <img src="images/map.png">
-        </div>
+        <h3>Is <span>Michael Jones</span> still the President of <span>ABC Technology company</span>?</h3>
         <input type="button" name="next" class="next action-button" value="Yes" />
         <input type="button" name="next" class="next action-button inactive-button" value="No" />
       </fieldset>
 
       <fieldset id="confirm-name">
-        <h3>According to Experian, you owe $654,395 on your mortgage with Quicken Loans and your payments are $4,596/mo.</h3>
-        <h3>Is that “about” right?</h3>
-        <input type="button" name="next" class="next action-button" value="Yes" />
-        <input type="button" name="next" class="next action-button inactive-button" value="No" />
-      </fieldset>
-
-      <fieldset id="option-list" class="three-buttons">
-        <h3>Great Terri, you’ve got two options.</h3>
-        <div class="wrapper">
-          <ul>
-            <li>1. You can reduce your monthly payment (refinance).</li>
-            <li>2. You can get cash back (home equity).</li>
-          </ul>
-        </div>
-        <h3>Which option would you like to see?</h3>
-          <input type="button" name="next" class="next action-button" value="Refinance" />
-          <input type="button" name="next" class="next action-button inactive-button" value="Home Equity" />
-          <input type="button" name="next" class="next action-button inactive-button" value="Both" />
-      </fieldset>
-
-      <fieldset id="confirm-revenue">
-        <h3>Refinancing will reduce your payments to $3,948/mo saving you $648/mo and $7,776 over the next twelve months.</h3>
-        <h3>Do you want to see your home equity option?</h3>
-        <input type="button" name="next" class="next action-button" value="Yes" />
-        <input type="button" name="next" class="next action-button inactive-button" value="No" />
-      </fieldset>
-
-      <fieldset id="shipping-address">
-        <h3>You could get $212,395 in cash (use it for home improvements, pay off debt, purchase a new car, etc.) and your total monthly payment would be  $5023/mo.</h3>
-        <h3>Which option works best for you?</h3>
-        <input type="button" name="next" class="next action-button" value="Refinance" />
-        <input type="button" name="next" class="next action-button inactive-button" value="Home Equity" />
-      </fieldset>
-
-      <fieldset id="option-home-worth">
-        <h3>Great, that’s an excellent option.</h3>
-        <h3>Let’s get started. There are no long applications since we already have most of the information we need. You simply need to verify this information. It only takes a few minutes.</h3>
-        <h3>Ready to go?</h3>
+        <h3>Are you <span>Michael Jones</span>?</h3>
         <input type="button" name="next" class="next action-button" value="Yes" />
         <input type="button" name="next" class="next action-button inactive-button" value="No" />
       </fieldset>
 
       <fieldset id="experian">
         <h3>
-          <span>Terri</span>, for your protection, we need to verify your identity through Experian, is this ok?
+          <span>Michael</span>, for your protection, we need to verify your identity through Experian, is this ok?
           <div class="tooltip-item">
             ?
             <div class="tooltip">
@@ -136,42 +88,163 @@
         <input type="button" name="next" class="next action-button inactive-button" value="No" />
       </fieldset>
 
-      <fieldset id="option-loan" class="radio-group">
-        <h3>Which of these three addresses is one of the places you lived prior to your purchase of your San Clemente home:</h3>
-        <div class="next">
-          <label class="radio"><input id="radio1" type="radio" name="radios"><span class="outer"><span class="inner"></span></span>10 Spinnaker Drive, Carlsbad, CA </label>
-          <label class="radio"><input id="radio2" type="radio" name="radios"><span class="outer"><span class="inner"></span></span>1909 Hawthorne Drive, Sudbury, MA</label>
-          <label class="radio"><input id="radio3" type="radio" name="radios"><span class="outer"><span class="inner"></span></span>344 Palm Canyon, Los Angles, CA</label>
+      <fieldset id="address">
+        <h3>
+          <span>Michael</span>, enter your home address and date of birth so we can verify this information with the Experian credit report.
+          <div class="tooltip-item">
+            ?
+            <div class="tooltip">
+              <p>We use the  your home address to match with your Experian credit report. This is a “soft pull” of your report for pre-screening purposes. It will not affect your credit score or put an inquiry on your report. </p>
+            </div>
+          </div>
+        </h3>
+        <label>Home Address</label>
+        <div class="inputs full-input">
+          <field>
+            <input type="text" name="street" placeholder="Street" />
+          </field>
+          <field>
+            <input type="text" name="suite" placeholder="Suite" />
+          </field>
         </div>
-      </fieldset>
-
-      <fieldset id="confirm-revenue">
-        <h3>That’s it.</h3>
-        <h3>Now, let’s verify your employment. Do you still work for the BOEING CORPORATION in Huntington Beach, California?</h3>
-        <input type="button" name="next" class="next action-button" value="Yes" />
-        <input type="button" name="next" class="next action-button inactive-button" value="No" />
-      </fieldset>
-
-      <fieldset id="confirm-revenue">
-        <h3>What’s your yearly income from your job at the BOEING CORPORATION? <small>(Box 1 on your W2 form)</small></h3>
+        <div class="inputs third-input">
+          <field>
+            <input type="text" name="city" placeholder="City" />
+          </field>
+          <field>
+            <input type="text" name="state" placeholder="State" />
+          </field>
+          <field>
+            <input type="tel" name="zipCode" placeholder="Zip Code" />
+          </field>
+        </div>
+        <label>Date of Birth</label>
         <div class="inputs half-input">
-          <field class="currency-symbol">
-            <input type="tel" name="annualRevenue" placeholder="" />
+          <field>
+            <input type="date" name="birthDate"/>
           </field>
         </div>
         <input type="button" name="next" class="next action-button" value="Next" />
       </fieldset>
 
       <fieldset id="confirm-revenue">
-        <h3>We are going to need your tax returns, but we can get them directly from the IRS with your permission.</h3>
-        <p>Sign below and we will submit a FORM 4506T on your behalf. <small>(<a href="#">Terms and Conditions</a>)</small></p>
-        <input type="text" name="" placeholder="Type Your Name">
-        <input type="button" name="next" class="next action-button" value="Submit" />
+        <h3>Your annual revenues are about <span>$310,000</span> is that correct?</h3>
+        <input type="button" name="next" class="next action-button" value="Yes" />
+        <input type="button" name="next" class="next action-button inactive-button" value="No" />
+      </fieldset>
+
+
+      <fieldset id="product-list">
+        <h3>Based on your revenues, company credit scores, and personal credit, we’ve got three products for you.</h3>
+        <div class="wrapper">
+          <ol>
+            <li>A line of credit for daily expenses at $12,000.</li>
+            <li>Term loan for expansion at $50,000.</li>
+            <li>A home equity line at 3.8%.</li>
+          </ol>
+        </div>
+        <h3>Are you ready to learn more?</h3>
+        <input type="button" name="next" class="next action-button" value="Yes" />
+        <input type="button" name="next" class="next action-button inactive-button" value="No" />
+      </fieldset>
+
+      <fieldset id="visa-card">
+        <h3>You can access your line of credit with our VISA BUSINESS card.</h3>
+        <div class="wrapper">
+          <ul class="text-block">
+            <li>Credit limit = $12,000</li>
+            <li>Interest rate = 14.7% </li>
+            <li>Cash advance = $5,000</li>
+            <br><a href="#">View Terms & Conditions</a>
+          </ul>
+          <div class="image-block">
+            <img src="images/business-card.png">
+          </div>
+        </div>
+        <h3>Do you want the card sent to your business address?</h3>
+        <input type="button" name="next" class="next action-button" value="Yes" />
+        <input type="button" name="next" class="next action-button inactive-button" value="No" />
+      </fieldset>
+
+      <fieldset id="shipping-address">
+        <h3>Okay, we will overnight your card to this address:</h3>
+        <div class="wrapper">
+          <p>
+            ABC Technology Company, LLC<br>
+            19 Hawthorne Drive<br>
+            Sudbury, MA 01776
+          </p>
+        </div>
+        <input type="button" name="next" class="next action-button" value="Yes" />
+        <input type="button" name="next" class="next action-button inactive-button" value="No" />
+      </fieldset>
+
+      <fieldset id="option-list">
+        <h3>Michael, we have two options for your expansion term loan. Which option do you want to learn more about?</h3>
+        <div class="wrapper">
+          <ul>
+            <li>Option 1 – Home equity with an interest rate of 3.7%.</li>
+            <li>Option 2 – Unsecured term loan at a rate of 11.7%.</li>
+          </ul>
+        </div>
+        <input type="button" name="next" class="next action-button" value="Option 1" />
+        <input type="button" name="next" class="next action-button inactive-button" value="Option 2" />
+      </fieldset>
+
+      <fieldset id="option-home-worth">
+        <h5>Option 1 – Home Equity </h5>
+        <h3>According to Zillow your home is worth about $310,000 and it looks like you owe about $124,358 on your mortgage. Is this right?</h3>
+        <input type="button" name="next" class="next action-button" value="Yes" />
+        <input type="button" name="next" class="next action-button inactive-button" value="No" />
+      </fieldset>
+
+      <fieldset id="option-loan">
+        <h5>Option 1 – Home Equity</h5>
+        <h3>Would you be interested in this type of loan?</h3>
+        <div class="wrapper">
+          <ul>
+            <li>Loan Amount = $148,000</li>
+            <li>Interest Rate = 3.9% </li>
+            <li>Payment = $1,493</li>
+            <li>Term = 10 years</li>
+          </ul>
+        </div>
+        <input type="button" name="next" class="next action-button" value="Yes" />
+        <input type="button" name="next" class="next action-button inactive-button" value="No" />
+      </fieldset>
+
+      <fieldset id="file-uploader" class="upload">
+        <h3>
+          We need to verify your revenues through your company banks statements.
+          <div class="tooltip-item">
+            ?
+            <div class="tooltip">
+              <p>We verify your revenue through company banks statement. This is the final underwriting step. Download these from your online business checking account or scan them into your computer. We need all pages in PDF or jpeg format. Upload the last 3 months of statements.</p>
+            </div>
+          </div>
+        </h3>
+        <img src="images/statements.svg" class="statement-icon">
+        <div class="file-uploader">
+          <h5 class="file-uploader__message-area orange">
+            Upload all pages of your last 3 bank statements
+          </h5>
+          <label class="fileContainer file-chooser">
+            Choose File
+            <input class="file-chooser__input" type="file"/>
+          </label>
+        </div>
+        <input type="button" name="next" class="next action-button add-break inactive-button" value="Continue" />
+      </fieldset>
+
+      <fieldset id="loan-and-terms">
+        <h3>Select the Loan Amount and Terms</h3>
+        <a href="#" class="next">
+          <img src="images/loan.png">
+        </a>
       </fieldset>
 
       <fieldset id="complete">
-        <h3>Great you’re done, Sharon Boyer has been assigned to your account. She’s a licensed mortgage originator, specializing in home equity.</h3>
-        <p>She will reach out to your shorty or you can contact her directly.</p>
+        <h3>Perfect, Sharon Boyer has been assigned to your account. She’s a licensed mortgage originator, specializing in doing mortgages for small business owners.</h3>
         <div class="contact-block">
           <img src="images/sharon.jpg" class="point-of-contact">
           <div class="contact-info">
@@ -180,6 +253,8 @@
             <img src="images/bbmc-logo.jpg" class="grey-logo">
           </div>
         </div>
+        <hr><br>
+        <p>She’s going to give you some different financing options and verify your revenue prior to funding.</p>
       </fieldset>
     </form>
   </section>
@@ -189,20 +264,18 @@
     <div class="sliding-panel-close"><img src="images/close.svg"></div>
     <ul class="question-list">
       <li><a href="#" class="checked">Card Number</a></li>
-      <li><a href="#" class="checked">Is that you?</a></li>
-      <li class="active"><a href="#">Address</a></li>
-      <li><a href="#">Home Value</a></li>
-      <li><a href="#">Mortgage</a></li>
+      <li><a href="#" class="checked">Company Name</a></li>
+      <li class="active"><a href="#">Company President</a></li>
+      <li><a href="#">Is that you?</a></li>
+      <li><a href="#">Verify ID</a></li>
+      <li><a href="#">Home Address & DOB</a></li>
+      <li><a href="#">Annual Revenue</a></li>
+      <li><a href="#">Product Types</a></li>
+      <li><a href="#">VISA BUSINESS Card</a></li>
+      <li><a href="#">Shipping Address</a></li>
       <li><a href="#">Options</a></li>
-      <li><a href="#">Refinancing</a></li>
-      <li><a href="#">Refinancing Option</a></li>
-      <li><a href="#">Select Option</a></li>
-      <li><a href="#">Option Selected</a></li>
-      <li><a href="#">Verify Identity</a></li>
-      <li><a href="#">Employment</a></li>
-      <li><a href="#">Yearly Income</a></li>
-      <li><a href="#">Confirm</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#">Upload Bank Statements</a></li>
+      <li><a href="#">Select Loan & Terms</a></li>
     </ul>
   </nav>
 
