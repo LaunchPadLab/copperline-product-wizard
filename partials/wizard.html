@@ -127,19 +127,27 @@
         <input type="button" name="next" class="next action-button" value="Next" />
       </fieldset>
 
+      <fieldset id="address-options" class="radio-group">
+        <h3>Which of these three addresses is one of the places you lived prior to your purchase of your San Clemente home:</h3>
+        <div class="next">
+          <label class="radio"><input id="radio1" type="radio" name="radios"><span class="outer"><span class="inner"></span></span>10 Spinnaker Drive, Carlsbad, CA </label>
+          <label class="radio"><input id="radio2" type="radio" name="radios"><span class="outer"><span class="inner"></span></span>1909 Hawthorne Drive, Sudbury, MA</label>
+          <label class="radio"><input id="radio3" type="radio" name="radios"><span class="outer"><span class="inner"></span></span>344 Palm Canyon, Los Angles, CA</label>
+        </div>
+      </fieldset>
+
       <fieldset id="confirm-revenue">
         <h3>Your annual revenues are about <span>$310,000</span> is that correct?</h3>
         <input type="button" name="next" class="next action-button" value="Yes" />
         <input type="button" name="next" class="next action-button inactive-button" value="No" />
       </fieldset>
 
-
       <fieldset id="product-list">
         <h3>Based on your revenues, company credit scores, and personal credit, we’ve got three products for you.</h3>
         <div class="wrapper">
           <ol>
-            <li>A line of credit for daily expenses at $12,000.</li>
-            <li>Term loan for expansion at $50,000.</li>
+            <li> A Business Credit Card (VISA) with a $6,000 limit.</li>
+            <li> A business term ($45,000) that you can use for expansion.</li>
             <li>A home equity line at 3.8%.</li>
           </ol>
         </div>
@@ -149,25 +157,42 @@
       </fieldset>
 
       <fieldset id="visa-card">
-        <h3>You can access your line of credit with our VISA BUSINESS card.</h3>
+        <h3> Congratulations, you’ve been pre-qualified for a First Bankcard business VISA.</h3>
+        <p>You can use this card for daily business expenses while earning rewards and improving your business credit scores.</p>
         <div class="wrapper">
           <ul class="text-block">
-            <li>Credit limit = $12,000</li>
-            <li>Interest rate = 14.7% </li>
-            <li>Cash advance = $5,000</li>
+            <li>Credit limit = $6,000 </li>
+            <li>Interest rate = 17.8% </li>
+            <li>Cash advance = $3,000</li>
             <br><a href="#">View Terms & Conditions</a>
+            <br><br><a href="#">View Rewards Program</a>
           </ul>
           <div class="image-block">
             <img src="images/business-card.png">
           </div>
         </div>
-        <h3>Do you want the card sent to your business address?</h3>
+        <h3>Would you like this card? We can priority ship it to you tomorrow.</h3>
         <input type="button" name="next" class="next action-button" value="Yes" />
         <input type="button" name="next" class="next action-button inactive-button" value="No" />
+        <div class="footnote">
+          <p>Copyright © 2017 First Bankcard, a division of First National Bank of Omaha. All Rights Reserved. 1620 Dodge St. Omaha, NE 68197.</p>
+        </div>
+      </fieldset>
+
+      <fieldset id="terms">
+        <h3>Excellent. Make sure you read the terms and conditions and then click on “Accept the Card” below. </h3>
+        <p>We will transmit your credit application to the First National Bank of Omaha. FNBO will pull an Experian Credit report and then process your application and then open your account. This only takes a few seconds or so. And don’t worry, we’ve already pre-screened it with them.
+        <br><br><a href="#">View Terms & Conditions</a>
+        </p>
+        <input type="button" name="next" class="next action-button" value="Accept the Card" />
+        <input type="button" name="next" class="next action-button inactive-button" value="Not Now" />
+        <div class="footnote">
+          <p>Copyright © 2017 First Bankcard, a division of First National Bank of Omaha. All Rights Reserved. 1620 Dodge St. Omaha, NE 68197.</p>
+        </div>
       </fieldset>
 
       <fieldset id="shipping-address">
-        <h3>Okay, we will overnight your card to this address:</h3>
+        <h3>Congratulations, you’ve been approved and we will overnight your card to this address:</h3>
         <div class="wrapper">
           <p>
             ABC Technology Company, LLC<br>
@@ -177,6 +202,9 @@
         </div>
         <input type="button" name="next" class="next action-button" value="Yes" />
         <input type="button" name="next" class="next action-button inactive-button" value="No" />
+        <div class="footnote">
+          <p>Copyright © 2017 First Bankcard, a division of First National Bank of Omaha. All Rights Reserved. 1620 Dodge St. Omaha, NE 68197.</p>
+        </div>
       </fieldset>
 
       <fieldset id="option-list">
@@ -194,6 +222,9 @@
       <fieldset id="option-home-worth">
         <h5>Option 1 – Home Equity </h5>
         <h3>According to Zillow your home is worth about $310,000 and it looks like you owe about $124,358 on your mortgage. Is this right?</h3>
+        <div class="wrapper">
+          <img src="images/zillow.jpg" class="zillow">
+        </div>
         <input type="button" name="next" class="next action-button" value="Yes" />
         <input type="button" name="next" class="next action-button inactive-button" value="No" />
       </fieldset>
@@ -213,36 +244,6 @@
         <input type="button" name="next" class="next action-button inactive-button" value="No" />
       </fieldset>
 
-      <fieldset id="file-uploader" class="upload">
-        <h3>
-          We need to verify your revenues through your company banks statements.
-          <div class="tooltip-item">
-            ?
-            <div class="tooltip">
-              <p>We verify your revenue through company banks statement. This is the final underwriting step. Download these from your online business checking account or scan them into your computer. We need all pages in PDF or jpeg format. Upload the last 3 months of statements.</p>
-            </div>
-          </div>
-        </h3>
-        <img src="images/statements.svg" class="statement-icon">
-        <div class="file-uploader">
-          <h5 class="file-uploader__message-area orange">
-            Upload all pages of your last 3 bank statements
-          </h5>
-          <label class="fileContainer file-chooser">
-            Choose File
-            <input class="file-chooser__input" type="file"/>
-          </label>
-        </div>
-        <input type="button" name="next" class="next action-button add-break inactive-button" value="Continue" />
-      </fieldset>
-
-      <fieldset id="loan-and-terms">
-        <h3>Select the Loan Amount and Terms</h3>
-        <a href="#" class="next">
-          <img src="images/loan.png">
-        </a>
-      </fieldset>
-
       <fieldset id="complete">
         <h3>Perfect, Sharon Boyer has been assigned to your account. She’s a licensed mortgage originator, specializing in doing mortgages for small business owners.</h3>
         <div class="contact-block">
@@ -250,7 +251,6 @@
           <div class="contact-info">
             <p><strong>Sharon Boyer</strong> <br>800-260-4897 x713<br>sharon@copperlineusa.com</p>
             <p>Branch Office: Chicago</p>
-            <img src="images/bbmc-logo.jpg" class="grey-logo">
           </div>
         </div>
         <hr><br>
@@ -269,12 +269,14 @@
       <li><a href="#">Is that you?</a></li>
       <li><a href="#">Verify ID</a></li>
       <li><a href="#">Home Address & DOB</a></li>
+      <li><a href="#">Home Address Options</a></li>
       <li><a href="#">Annual Revenue</a></li>
       <li><a href="#">Product Types</a></li>
       <li><a href="#">VISA BUSINESS Card</a></li>
+      <li><a href="#">Card Terms</a></li>
       <li><a href="#">Shipping Address</a></li>
       <li><a href="#">Options</a></li>
-      <li><a href="#">Upload Bank Statements</a></li>
+      <li><a href="#">Home Worth</a></li>
       <li><a href="#">Select Loan & Terms</a></li>
     </ul>
   </nav>
